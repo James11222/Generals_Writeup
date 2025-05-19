@@ -1,0 +1,925 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Stars &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Stars';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Dynamics" href="Dynamics.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="PhD_Level_Astrophysics_in_a_Nutshell.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="PhD_Level_Astrophysics_in_a_Nutshell.html">
+                    PhD Level Astrophysics in a Nutshell
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Cosmology_and_Extragalactic_Astronomy.html">Cosmology and Extragalactic Astronomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diffuse_Matter_in_Space.html">Diffuse Matter in Space</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynamics.html">Dynamics</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Stars</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FStars.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Stars.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Stars</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="stars">
+<h1>Stars<a class="headerlink" href="#stars" title="Link to this heading">#</a></h1>
+<ol class="arabic">
+<li><p><span style="color:magenta">Draw a Hertzsprung-Russell diagram with luminosity and temperature axes, and then:
+• Identify the main sequence, with representative stellar masses labeled.
+• Draw a few lines of constant radius.
+• Use the diagram to describe the evolution of a solar-mass star.
+• Identify the white-dwarf cooling sequence.
+• Explain how such a diagram is used to estimate the age of a globular cluster.</span></p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-15__at__2.06.29__PM.png" /></p>
+<p>The stages of evolution for a <span class="math notranslate nohighlight">\(1 \rm M_\odot\)</span> star are given below</p>
+<p>I) <strong>Hayashi Track:</strong> Helmholtz gravitational contraction of a protostellar core (timescale <span class="math notranslate nohighlight">\(\sim 50 \; \rm Myr\)</span>). This core is approximated as convective (<span class="math notranslate nohighlight">\(n = 3/2\)</span> polytrope), ideal gas, with <span class="math notranslate nohighlight">\(\kappa_{H-}\)</span> opacity. Essentially vertical contraction along <span class="math notranslate nohighlight">\(T_{\rm eff} \sim 2000-3000 \; \rm K\)</span>.</p>
+<p>II) <strong>Main Sequence:</strong> H-Burning in the core (via pp-chain for <span class="math notranslate nohighlight">\(M\lesssim 2 \; \rm M_\odot\)</span> and CNO for <span class="math notranslate nohighlight">\(M \gtrsim 2 M_\odot\)</span>), <strong>this phase dominates the lifetime</strong>. For the Sun this is <span class="math notranslate nohighlight">\(\sim 8 \; \rm Gyr\)</span>.</p>
+<p>III) <strong>Sub-Giant Branch (SGB) / Red Giant Branch (RGB):</strong> The core burns all H -&gt; He, the core contracts enough such that the temperature gets high enough for H-shell burning to occur. Shell burning causes the star to expand and cool due to negative specific heat implied by virial theorem.</p>
+<p>IV) <strong>Helium Flash:</strong> H-shell burning increases He in core (He sinks) -&gt; <span class="math notranslate nohighlight">\(\rho_c \uparrow\)</span>. The core becomes degenerate and pressure becomes independent of <span class="math notranslate nohighlight">\(T_{\rm c}\)</span>. This degeneracy pile up gradually increases <span class="math notranslate nohighlight">\(T_{\rm c}\)</span> until <span class="math notranslate nohighlight">\(T_{\rm c} \sim 10^8 \; \rm K\)</span>. Then the <span class="math notranslate nohighlight">\(3\alpha\)</span> process kicks on and He burning begins. The <span class="math notranslate nohighlight">\(3 \alpha\)</span> process has a <strong>steep dependence on <span class="math notranslate nohighlight">\(T_{\rm c}\)</span></strong> and begins to burn through He -&gt; C &amp; O <strong>RAPIDLY</strong> (<span class="math notranslate nohighlight">\(\sim 5 \%\)</span> of He in ~ minutes). Once <span class="math notranslate nohighlight">\(3\alpha\)</span> begins, the core becomes non-degenerate and rapidly expands -&gt; cooling and contraction of outer layers. We note this doesn’t happen if a star is sufficiently massive such that the core never becomes degenerate (<span class="math notranslate nohighlight">\(M \gtrsim 2 \; \rm M_\odot\)</span>).</p>
+<p>V) <strong>Horizontal Branch (HB):</strong> He core burning via <span class="math notranslate nohighlight">\(3 \alpha\)</span> process and H-shell burning via CNO cycle.</p>
+<p>VI) <strong>Asymptotic Giant Branch (AGB):</strong> When the core runs out of He fuel -&gt; core contracts and <span class="math notranslate nohighlight">\(T \uparrow\)</span> -&gt; He shell burning. He-shell undergoes periodic He flashes due to tendency to become degenerate. These flashes -&gt; <span class="math notranslate nohighlight">\(\dot{M} \uparrow\)</span> through stellar winds.</p>
+<p>VII) <strong>Post-AGB:</strong> Stellar winds strip outer H &amp; He envelopes, fusion stops, leaving behind an inert C-O core. The ejected outer layers form a planetary nebula.</p>
+<p>VIII) <strong>White Dwarf (WD):</strong> C-O contracts and becomes a degenerate WD. WD cools rapidly by the emission of neutrinos. Then WD continues to cool by thermal emission until it becomes a “black dwarf” in <span class="math notranslate nohighlight">\(t \gg t_{H_0}\)</span>.</p>
+<p>We also include a few evolutionary tracks on the same HR diagram for the sake of understanding more than just the Sun.  <img alt="placeholder" src="_images/Screenshot__2025-05-15__at__2.34.26__PM.png" /> To determine the age of a Globular cluster, we know the stars form from the same IMF so there will be a distribution of stars that all formed at the same time. As time progresses, stars will begin to turn off the MS, measuring this turn off point can provide a good measurement of the age of the GC (see below). <img alt="placeholder" src="_images/Screenshot__2025-05-15__at__2.37.50__PM.png" /></p>
+<p>We summarize the approximate timescales below</p>
+</li>
+</ol>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Stage</p></th>
+<th class="head"><p>Timescale</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Hayashi</p></td>
+<td><p>50 Myr</p></td>
+</tr>
+<tr class="row-odd"><td><p>Main Sequence</p></td>
+<td><p>10 Gyr</p></td>
+</tr>
+<tr class="row-even"><td><p>SGB</p></td>
+<td><p>1 Gyr</p></td>
+</tr>
+<tr class="row-odd"><td><p>RGB</p></td>
+<td><p>100 Myr</p></td>
+</tr>
+<tr class="row-even"><td><p>He Flash</p></td>
+<td><p>minutes</p></td>
+</tr>
+<tr class="row-odd"><td><p>HB</p></td>
+<td><p>100 Myr</p></td>
+</tr>
+<tr class="row-even"><td><p>AGB</p></td>
+<td><p>10 Myr</p></td>
+</tr>
+<tr class="row-odd"><td><p>Post-AGB</p></td>
+<td><p>100 kyr</p></td>
+</tr>
+<tr class="row-even"><td><p>WD</p></td>
+<td><p><span class="math notranslate nohighlight">\(\gtrsim\)</span> 10 Gyr</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic" start="2">
+<li><p><span style="color:magenta">Describe the spectral classification system for stars. What are some prominent lines in an A star? G star? M star?</span></p>
+<p>Each class has subclasses 0-9 where 0:hottest and 9:coolest. The Sun is a G2 star for example. M stars are <span class="math notranslate nohighlight">\(\sim 75 \%\)</span> of all stars! The choice of letter for each class is in order of strength of Hydrogen absorption lines (A stars have the strongest Balmer absorption lines).</p>
+<p>Notable Attributes:</p>
+<p><strong>A:</strong> Strongest Balmer Lines</p>
+<p><strong>G:</strong> Strong <span class="math notranslate nohighlight">\(\rm Ca^+H\)</span> and <span class="math notranslate nohighlight">\(\rm Ca^+ K\)</span> lines among other Fraunhaufer lines due to <span class="math notranslate nohighlight">\(\rm O_2, Na, Mg, \&amp; \; Fe\)</span></p>
+<p><strong>M:</strong> Strong lines from <strong>Oxide Molecules</strong> like <span class="math notranslate nohighlight">\(\rm TiO\)</span>. Also have neutral metal lines. Continuous absorption band due to <span class="math notranslate nohighlight">\(\rm TiO\)</span> instead of narrow lines that are discrete.</p>
+<p><strong>O:</strong> No Balmer Lines, too hot!</p>
+</li>
+</ol>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Class</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(T_{\rm eff} \; \rm [K]\)</span></p></th>
+<th class="head"><p>ZAMS Mass <span class="math notranslate nohighlight">\([\rm M_\odot]\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>O</p></td>
+<td><p><span class="math notranslate nohighlight">\(\gtrsim 30,000\)</span></p></td>
+<td><p>&gt; 16</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p><span class="math notranslate nohighlight">\(30,000 - 10,000\)</span></p></td>
+<td><p>[2,16]</p></td>
+</tr>
+<tr class="row-even"><td><p>A</p></td>
+<td><p><span class="math notranslate nohighlight">\(10,000 - 7000\)</span></p></td>
+<td><p>[1.5, 2]</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p><span class="math notranslate nohighlight">\(7000 - 6000\)</span></p></td>
+<td><p>[1, 1.5]</p></td>
+</tr>
+<tr class="row-even"><td><p>G</p></td>
+<td><p><span class="math notranslate nohighlight">\(6000 - 5000\)</span></p></td>
+<td><p>[0.8, 1]</p></td>
+</tr>
+<tr class="row-odd"><td><p>K</p></td>
+<td><p><span class="math notranslate nohighlight">\(5000 - 4000\)</span></p></td>
+<td><p>[0.5, 0.8]</p></td>
+</tr>
+<tr class="row-even"><td><p>M</p></td>
+<td><p><span class="math notranslate nohighlight">\(4000 - 3000\)</span></p></td>
+<td><p>[0.1, 0.5]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic" start="3">
+<li><p><span style="color:magenta">Using statistical mechanics, explain why the Balmer lines are most prominent in stars with effective temperatures near 10,000 K (A stars).</span></p>
+<p>At <span class="math notranslate nohighlight">\(T \sim 10,000 \; \rm K\)</span> there is a significant fraction of neutral H in the n=2 state. If we assume LTE, the fraction of neutral H at level n state is</p>
+<div class="math notranslate nohighlight">
+\[f_n = \frac{g_n e^{-E_n / kT}}{Z} \;\;\;\;\;\;\;\; \textrm{where} \;\;\;\; Z = \sum_{n = 1}^{\infty} g_n e^{-E_n / kT}\]</div>
+<p>We denote <span class="math notranslate nohighlight">\(Z\)</span> as the partition function, <span class="math notranslate nohighlight">\(g_n = 2n^2\)</span> to be the degeneracy factor, and <span class="math notranslate nohighlight">\(E_n = -13.6 \; \mathrm{eV} / n^2\)</span>. The ionization fraction is given by the Saha Equation</p>
+<div class="math notranslate nohighlight">
+\[\frac{x^2}{1 - x} = \frac{1}{n_{\rm H} \lambda_B^3} e^{-E_1 / kT} \; .\]</div>
+<p>To get the total <span class="math notranslate nohighlight">\(n_{\rm H, 2}\)</span> we have to account for the amount of neutral H in the n=2 state and how much of the H is ionized</p>
+<div class="math notranslate nohighlight">
+\[n_{\rm H,2} = f_2 (1 - x) n_{\rm H} \; .\]</div>
+<p>This <strong>quantity is maximized around</strong> <span class="math notranslate nohighlight">\(T \sim 10,000 \; \rm K\)</span>, its a balance between raising <span class="math notranslate nohighlight">\(e^-\)</span> to n=2 and becoming too hot to ionize the H.</p>
+</li>
+<li><p><span style="color:magenta">Consider a stellar photosphere with approximately constant temperature and opacity. Show that the pressure is approximately equal to the surface gravity divided by opacity. Show that if the pressure is dominated by radiation pressure, the star must be radiating nearly at the Eddington limit.</span></p>
+<p>We start with 2 fundamental equations</p>
+<div class="math notranslate nohighlight">
+\[\frac{dP}{dr} = -\rho g \;\;\;\;\;\;\; d\tau = -\kappa \rho \; dr\]</div>
+<p>which we can combine to get</p>
+<div class="math notranslate nohighlight">
+\[\frac{dP}{d\tau} = \frac{g}{\kappa} \rightarrow P_{\rm ph} = \int_0^{2/3} \frac{g}{\kappa} d\tau \approx \frac{2}{3} \frac{g}{\kappa}\]</div>
+<p>where we define the photosphere to be when the optical depth reaches <span class="math notranslate nohighlight">\(\tau = 2/3\)</span>. In summary we combine the equation of hydrostatic equilibrium with the definition of optical depth.</p>
+<p>The total pressure can be written as a sum of the gas pressure and radiation pressure <span class="math notranslate nohighlight">\(P = P_{\rm rad} + P_{\rm gas}\)</span>, so if the radiation pressure dominates then <span class="math notranslate nohighlight">\(P \sim P_{\rm rad}\)</span>. The radiation pressure is commonly defined as <span class="math notranslate nohighlight">\(P_{\rm rad} = \frac{1}{3}a T^4\)</span> where the radiation constant is <span class="math notranslate nohighlight">\(a = 4 \sigma_{\rm SB} / c\)</span>. We can use an additional equation of stellar structure</p>
+<div class="math notranslate nohighlight">
+\[\frac{dP_{\rm rad}}{dr} = \frac{L_r}{4 \pi r^2} \frac{\kappa \rho}{c}\]</div>
+<p>If we combine this equation with the equation of hydrostatic equilibrium then we get</p>
+<div class="math notranslate nohighlight">
+\[1 - \beta \approx \frac{dP_{\rm rad}}{dP} \approx \frac{\frac{L_r}{4 \pi r^2} \frac{\kappa \rho}{c}}{\rho g} \approx \frac{L \kappa}{4 \pi G Mc}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\beta\)</span> is equal to 0 if the star is fully radiative and 1 if its not radiative at all. If the star is dominated by radiation pressure then <span class="math notranslate nohighlight">\(1 - \beta \lesssim 1\)</span> which gives us</p>
+<div class="math notranslate nohighlight">
+\[L \lesssim \frac{4 \pi G M c}{\kappa} \; .\]</div>
+</li>
+<li><p><span style="color:magenta">What is the meaning of the term “Rosseland mean opacity”? Why is it important? Sketch the Rosseland mean opacity of solar-composition gas as a function of temperature, for a few different densities, over the ranges of temperature and density relevant to stellar astrophysics.</span></p>
+<p>The Rosseland Mean is averaged over the Planck Spectrum:</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{\kappa_R} \equiv \frac{\int_0^\infty \frac{1}{\kappa_\nu} \frac{\partial B_\nu}{\partial T} d\nu}{\int_0^{\infty} \frac{\partial B_\nu}{\partial T} d\nu} = \frac{\pi}{acT^3} \int_0^\infty \frac{1}{\kappa_\nu} \frac{\partial B_\nu}{\partial T} d\nu\]</div>
+<p>This is important because it means we <strong>can ignore the <span class="math notranslate nohighlight">\(\nu\)</span> dependence</strong> and just worry about the energy transport! Super useful for stellar evolution codes like MESA. This “cheesy” diagram from class as Adam likes to call it, is very useful! <img alt="placeholder" src="_images/Screenshot__2025-05-15__at__3.15.12__PM.png" /></p>
+</li>
+<li><p><span style="color:magenta">Describe the main nuclear fusion reactions occurring in the Sun, and in a 2 M⊙main-sequence star.</span></p>
+<p>The most important nuclear reaction networks for 1 and 2 solar mass star are the pp-chain and the CNO cycle respectively.</p>
+<p><strong>PPI) - Important for <span class="math notranslate nohighlight">\(M \sim 1 \; \rm M_\odot\)</span></strong></p>
+<div class="math notranslate nohighlight">
+\[\rm p + p \rightarrow D + e^+ + \nu_e \;\;\; (rate \; limiting)\]</div>
+<div class="math notranslate nohighlight">
+\[\rm D + p \rightarrow ^3He + \gamma\]</div>
+<div class="math notranslate nohighlight">
+\[^3\rm He + ^3\rm He \rightarrow ^4\rm He + 2p\]</div>
+<p>The PPII and PPIII chains are also off-chutes of the PPI chain. The PPII chain uses <span class="math notranslate nohighlight">\(\rm ^7 Li\)</span> and <span class="math notranslate nohighlight">\(\rm^7 Be\)</span> to fuse He and the PPIII chain uses <span class="math notranslate nohighlight">\(\rm ^8 B\)</span> as an intermediate to fuse He. Those chains are important because the produce electron neutrinos which can be measured here on Earth (John Bahcall’s Solar Neutrino Problem).</p>
+<p>The PP chains consist of electromagntic, weak nuclear, and strong nuclear interactions. To remember which is what I remember the acronym <strong>WES-EWS-EW</strong> for the PPI,II,III respectively. A weak nuclear interaction will emit a neutrino and a positron, an electromagnetic will emit a photon, and a strong will not emit anything.</p>
+<p><strong>CNO) - Important for <span class="math notranslate nohighlight">\(M \sim 2 \; \rm M_\odot\)</span></strong></p>
+<div class="math notranslate nohighlight">
+\[\rm ^{12}C + p \rightarrow ^{13} N + \gamma\]</div>
+<div class="math notranslate nohighlight">
+\[\rm ^{13}N \rightarrow ^{13} C + e^+ + \nu_e\]</div>
+<div class="math notranslate nohighlight">
+\[\rm ^{13}C + p \rightarrow ^{14} N + \gamma\]</div>
+<div class="math notranslate nohighlight">
+\[\rm ^{14}N + p \rightarrow ^{15} O + \gamma \;\;\;\;\; (rate \; limiting)\]</div>
+<div class="math notranslate nohighlight">
+\[\rm ^{15}O \rightarrow ^{15} N + e^+ + \nu_e\]</div>
+<div class="math notranslate nohighlight">
+\[\rm ^{15}N + p \rightarrow ^{12} C + ^4He\]</div>
+<p>There are various versions of the CNO cycle that come into play at hotter temperatures and in shell burning. The CNO cycle is just a series of proton captures and <span class="math notranslate nohighlight">\(\beta\)</span> decays, an acronym I like to use to remember which are the decays and which are the proton captures is <strong>CDC-CDC</strong>.</p>
+<p>For nuclear burning, this plot is super important <img alt="placeholder" src="_images/Screenshot__2025-05-15__at__3.33.22__PM.png" /> where</p>
+<div class="math notranslate nohighlight">
+\[\eta = \frac{\partial \ln \overline{\sigma v}}{\partial \ln T}\]</div>
+<p>the core temperature range for pp-chain is <span class="math notranslate nohighlight">\(T_{\rm c} \sim 10^{6.5 - 7.5} \; \rm K\)</span> and the range for CNO is <span class="math notranslate nohighlight">\(T_{\rm c} \sim 10^{7.2 - 7.6}\)</span>. The Gamow Peak is important hear and is the effective energy where a reaction will proceed.</p>
+</li>
+<li><p><span style="color:magenta">What is the approximate mass-radius relationship for lower main-sequence stars? Provide a simple physical explanation for this observed relationship.</span></p>
+<p>We can derive this relationship by assuming a <strong>homologous star</strong>. There are 4 components to the homologous star</p>
+<p>I) <strong>Hydrostatic Equilibrium</strong></p>
+<div class="math notranslate nohighlight">
+\[\frac{dP}{dr} = -\rho g \;\;\;\;\; \longrightarrow P \sim \frac{GM^2}{R^4}\]</div>
+<p>II) <strong>Equation of State</strong></p>
+<div class="math notranslate nohighlight">
+\[P = nk_B T \longrightarrow P \sim \rho T\]</div>
+<p>if we combine with the hydrostatic equilibrium equation for pressure we get <span class="math notranslate nohighlight">\(T \sim M/R\)</span>.</p>
+<p>III) <strong>Energy Transport:</strong> We can assume Radiative diffusion to be the primary means of energy transport</p>
+<div class="math notranslate nohighlight">
+\[L \sim \frac{R^2 T^4}{e^\tau} \sim \frac{R^2 T^4}{\kappa \rho R}\]</div>
+<p>and we can assume <strong>Kramer’s Opacity</strong> <span class="math notranslate nohighlight">\(\kappa \propto \rho T^{-3.5}\)</span>. When we combine these we have</p>
+<div class="math notranslate nohighlight">
+\[L \sim \frac{R^7 T^{7.5}}{M^2}\]</div>
+<p>IV) <strong>Energy Generation:</strong> we assume nuclear burning by CNO (<span class="math notranslate nohighlight">\(L \sim \varepsilon M\)</span>) where <span class="math notranslate nohighlight">\(\varepsilon \propto \rho T^{20}\)</span> for the CNO cycle. Plugging this in and combining everything we arrive at</p>
+<div class="math notranslate nohighlight">
+\[R \propto M^{0.73}\]</div>
+<p>which is close enough to the observed relation <span class="math notranslate nohighlight">\(R \propto M^{0.8}\)</span>.</p>
+</li>
+<li><p><span style="color:magenta">What is the approximate mass-luminosity relationship for main-sequence stars? How does the main-sequence lifetime depend on stellar mass?</span></p>
+<p>The lifetime of a star on the MS is given by</p>
+<div class="math notranslate nohighlight">
+\[t_{\rm MS} \approx 0.007 \frac{M_{\rm core} c^2}{L} \; ,\]</div>
+<p>thus if we have the M-L relation we can determine the lifetime scaling with mass. The important M-L relations for stars on the MS are</p>
+</li>
+</ol>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Relation</p></th>
+<th class="head"><p>Mass Range</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L \propto M^{2.3}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(M &gt; 0.4 \; \rm M_\odot\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(L \propto M^4\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(M &lt; 2 \; \rm M_\odot\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L\propto M^{3.5}\)</span></p></td>
+<td><p>Most of the MS</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(L \propto M\)</span></p></td>
+<td><p>For high mass stars (<span class="math notranslate nohighlight">\(M \gtrsim 50 \; \rm M_\odot\)</span>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic" start="9">
+<li><p><span style="color:magenta">What is the minimum mass for a star to derive energy from proton-proton fusion? What physical criteria determine this minimum mass?</span></p>
+<p>The minimum mass is <span class="math notranslate nohighlight">\(M_{\rm min} \sim 0.08 \; \rm M_\odot\)</span>, this is because the <span class="math notranslate nohighlight">\(T\)</span> of the degenerate core reaches <span class="math notranslate nohighlight">\(T_{\rm c} \gtrsim 6 \times 10^{6} \; \rm K\)</span> as it contracts along the Hayashi Track, allowing H-burning to start via the pp-chain. For deuterium the minimum mass is about <span class="math notranslate nohighlight">\(M_{\rm min} \sim 10 \; \rm M_{\rm jup}\)</span>.</p>
+<p>We can understand how this minimum mass is derived by creating a frankenstein E.O.S</p>
+<div class="math notranslate nohighlight">
+\[P \approx \left[ \underbrace{\left( \frac{k_B}{\mu m_{\rm H}} \rho T \right)^2}_{\rm ideal \; gas} + \underbrace{\left(K_1 \rho^{5/3} \right)^2}_{\rm degenerate} \right]^{1/2} \; ,\]</div>
+<p>where we combine ideal gas contribution and a degenerate contribution. We will <strong>take the limits to find the maximum core temperature that corresponds to the minimum ignition mass</strong>. First we can solve for the temperature by using hydrostatic equilibrium <span class="math notranslate nohighlight">\(\rho \sim M / R^3\)</span> and <span class="math notranslate nohighlight">\(P \sim GM^2 / R^4\)</span> and we get</p>
+<div class="math notranslate nohighlight">
+\[T \sim \frac{\mu m_{\rm H}}{k_B} \frac{GM}{R} \left[ 1 - \left(\frac{K_1}{GRM^{1/3}} \right) \right]^{1/2}\]</div>
+<p>From here we take the limits.</p>
+<p>The <strong>Degenerate Limit</strong> is when <span class="math notranslate nohighlight">\(P_{\rm deg} \gg P_{\rm ideal}\)</span> : <span class="math notranslate nohighlight">\(R_{\rm min} = \frac{K_1}{N_n G M^{1/3}}\)</span>
+The <strong>Thermal Pressure Limit</strong> is when <span class="math notranslate nohighlight">\(P_{\rm ideal} \gg P_{\rm rad}\)</span> : <span class="math notranslate nohighlight">\(T_{\rm c} = 0.539 \frac{\mu m_{\rm H}}{k_B} \frac{GM}{R}\)</span></p>
+<p>By combining the limits we get</p>
+<div class="math notranslate nohighlight">
+\[T_{\rm c} \sim 0.54 \frac{\mu m_{\rm H}}{k_B} \frac{GM}{R} \left[1 - \left(\frac{R_{\rm min}}{R} \right)^2 \right]^{1/2} \; .\]</div>
+<p>To find the maximum core temperature the star can achieve we have to maximize the function by differentiating with respect to the radius. We find <span class="math notranslate nohighlight">\(R_0 = \sqrt{2} R_{\rm min}\)</span> which we then plug into the above expression and find the maximum core temperature relation to mass is</p>
+<div class="math notranslate nohighlight">
+\[T_{\rm c,max} \sim 6 \times 10^6 \; \rm K \left[\frac{M}{0.08 \; \rm M_\odot} \right]^{4/3} \; .\]</div>
+</li>
+<li><p><span style="color:magenta">What is the “triple-α” process? For what types of stars does it occur?</span></p>
+<p>The <span class="math notranslate nohighlight">\(3 \alpha\)</span> process is described by the following reaction</p>
+<div class="math notranslate nohighlight">
+\[\rm ^4 He + ^4 He \rightarrow ^8 Be^* \;\;\;\;\; \longrightarrow \;\;\;\;\;\; \rm ^4 He + ^8 Be^* \rightarrow ^{12} C + 2 \gamma\]</div>
+<p>The <span class="math notranslate nohighlight">\(3\alpha\)</span> process serves as the origin of Carbon in the star. We can also have a followup reaction with an additional <span class="math notranslate nohighlight">\(\alpha\)</span> particle to get <span class="math notranslate nohighlight">\(\rm ^4 He + ^{12} C \rightarrow ^{16} O + \gamma\)</span> which serves as the dominant origin of oxygen in the universe.</p>
+<p>This only occurs when the temperature is really hot <span class="math notranslate nohighlight">\(T \gtrsim 10^8 \; \rm K\)</span> (see fusion reaction energy density vs temperature plot). This can occur in the core of a star during the horizontal branch phase of stellar evolution or in the He-burning shell during the AGB phase.</p>
+<p>Important aside, <span class="math notranslate nohighlight">\(\rm ^8 Be\)</span> is metastable, it decays into 2 He nuclei in <span class="math notranslate nohighlight">\(\sim 10^{-16} \; \rm s\)</span>. The abundance of Be is set by the Saha equation</p>
+<div class="math notranslate nohighlight">
+\[\frac{n_\alpha^2}{n_{\rm Be}} = \left( \frac{2 \pi \mu kT}{h^2}\right)^{3/2} e^{-Q/kT}\]</div>
+<p>where <span class="math notranslate nohighlight">\(Q = -92 \; \rm keV\)</span> and <span class="math notranslate nohighlight">\(\mu = m_\alpha^2 / m_{\rm Be} \sim 2 m_{\rm p}\)</span>. At <span class="math notranslate nohighlight">\(T \sim 10^8 \; \rm K\)</span> we get a relative abundance of Be to He of <span class="math notranslate nohighlight">\(10^{-8}\)</span>.</p>
+</li>
+<li><p><span style="color:magenta">Explain the meaning of the Brunt-Vaïsäla frequency and how it is derived. How is the value of this frequency related to the mechanism of heat transport within a star?</span></p>
+<p>The BV frequency is a useful quantity for determining the stability of a fluid to convection. It is common to derive it in the context of mixing length theory. We can consider the buoyancy of fluid elements in an average temperature profile.</p>
+<p>If we suppose a blob of fluid is displaced <span class="math notranslate nohighlight">\(\delta r\)</span> from its equilibrium position, the change in pressure is then</p>
+<div class="math notranslate nohighlight">
+\[\delta P = \bar{P}(r + \delta r) - \bar{P} \approx \frac{d\bar{P}}{dr}\delta r \;,\]</div>
+<p>where we assume the blob is in pressure equilibrium with the ambient medium. The change in <span class="math notranslate nohighlight">\(\rho\)</span> is adiabatic so that</p>
+<div class="math notranslate nohighlight">
+\[\delta \rho = \left(\frac{d\rho}{dP} \right)_S \delta P = \left(\frac{d\rho}{dP} \right)_S \frac{d\bar{P}}{dr} \delta r\]</div>
+<p>we can define the density contrast as</p>
+<div class="math notranslate nohighlight">
+\[\Delta \rho \equiv \underbrace{\delta \rho}_{\rm blob} - \underbrace{\frac{d\bar{\rho}}{dr}\delta r}_{\rm ambient \; \nabla\rho} = \frac{d\bar{P}}{dr} \left[\left(\frac{d\rho}{dP} \right)_S - \frac{d\bar{\rho}}{d\bar{P}} \right] \delta r\]</div>
+<p>The sign of the RHS is crucial. If <span class="math notranslate nohighlight">\(\Delta \rho\)</span> has the same sign as <span class="math notranslate nohighlight">\(\delta r\)</span> then negative feedback occurs: blob gets overdense when it rises and underdense when it falls, so this is stable. If <span class="math notranslate nohighlight">\(\Delta \rho / \delta r &lt; 0\)</span> then we are <strong>unstable to convection</strong>.</p>
+<p>To derive the BV frequency we can write the force per unit volume as</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{f} = - \underbrace{(\bar{\rho} + \Delta \rho) g}_{\rm gravity} - \underbrace{\frac{dP}{dr}}_{\rm pressure} = -\left(\bar{\rho} g + \frac{dP}{dr}\right) - \Delta \rho g = \frac{\Delta \rho}{\bar{\rho}} \frac{d\bar{P}}{dr}\]</div>
+<p>and recognize that <span class="math notranslate nohighlight">\(f = \bar{\rho} \delta \ddot{r}\)</span>. If we plug everything in we get</p>
+<div class="math notranslate nohighlight">
+\[\delta \ddot{r} = \left(\frac{1}{\bar{\rho}} \frac{d\bar{P}}{dr} \right)^2 \left[\left(\frac{d\rho}{dP} \right)_S - \frac{d\bar{\rho}}{d\bar{P}} \right] \delta r = -N^2 \delta r\]</div>
+<p>where <span class="math notranslate nohighlight">\(N\)</span> is the BV frequency. If <span class="math notranslate nohighlight">\(N^2 &gt; 0\)</span> then the fluid is stable to convection, if <span class="math notranslate nohighlight">\(N^2 &lt; 0\)</span> then the fluid is unstable to convection.</p>
+<p>All that was fun and all… but how is this practically useful? Well one can write it in a different general form</p>
+<div class="math notranslate nohighlight">
+\[N^2 = -\underbrace{T}_{+} \frac{dS}{dr} \underbrace{\frac{d\ln P}{dr} \nabla_{\rm ad}}_{+} \propto -\frac{dS}{dr}\]</div>
+<p>where <span class="math notranslate nohighlight">\(S\)</span> is the entropy of the fluid and</p>
+<div class="math notranslate nohighlight">
+\[\nabla_{\rm ad} \equiv \frac{1}{\gamma}\left( \frac{\partial \ln T}{\partial \ln \rho} \right)_S \; .\]</div>
+<p>This form is particularly insightful because we can see the <strong>“Schwartzchild”</strong> criterion for convection very clearly, which basically states that <strong>when low-entropy fluid is on top of high-entropy fluid then we are unstable to convection.</strong></p>
+<p>One can also assume the ideal gas law and write the BV frequency as</p>
+<div class="math notranslate nohighlight">
+\[N^2 = -\frac{P}{\rho} \left( \frac{d\ln P}{dr}\right)^2 (\nabla - \nabla_{\rm ad})\]</div>
+<p>where <span class="math notranslate nohighlight">\(\nabla\)</span> has the same definition of <span class="math notranslate nohighlight">\(\nabla_{\rm ad}\)</span> just not at constant entropy. When <span class="math notranslate nohighlight">\(\nabla &gt; \nabla_{\rm ad}\)</span> then the fluid is said to be <strong>superadiabatic</strong> which means it is unstable to convection.</p>
+</li>
+<li><p><span style="color:magenta">What are the main categories of variable stars? What are Cepheid variables and why are they important? What is the κ-mechanism for stellar pulsations?</span></p>
+<p>The main classes of variable stars are:</p>
+<p>I) <strong>Classical Cepheids:</strong> <span class="math notranslate nohighlight">\(M \sim 5 - 20 \; \rm M_\odot\)</span>, supergiants in the instability strip. They have <span class="math notranslate nohighlight">\(P \sim 1-100 \; \rm days\)</span>. They follow a P-L relation.</p>
+<p>II) <strong>RR-Lyraes:</strong> <span class="math notranslate nohighlight">\(M \sim 0.5 - 0.8 \; \rm M_\odot\)</span>, horizontal branch stars in the instability strip with <span class="math notranslate nohighlight">\(P \sim 0.2 - 1 \; \rm days\)</span>. They follow a P-L relation.</p>
+<p>III) <strong>δ-Scuti Stars:</strong> <span class="math notranslate nohighlight">\(M \sim 1.5 - 2.5 \; \rm M_\odot\)</span>, MS or SGB stars in the instability strip with <span class="math notranslate nohighlight">\(P \sim 0.03 - 3 \; \rm days\)</span>.</p>
+<p>IV) <strong>Mira Variable Stars:</strong> AGB stars with κ-mechanism pulsations from partial H ionization zone with <span class="math notranslate nohighlight">\(P \sim 100 - 1000 \; \rm days\)</span>.</p>
+<p>V) <strong>β-Cepheids:</strong> <span class="math notranslate nohighlight">\(M \sim 8 - 16 \; \rm M_\odot\)</span>, B-stars with κ-mechanism pulsations from partial Fe ionization zone with <span class="math notranslate nohighlight">\(P \sim 0.1 - 0.5 \; \rm days\)</span></p>
+<p>VI) <strong>ZZ-Ceti Stars:</strong> WD stars that pulsate when the WD evolutionary track crosses the instability strip (with <span class="math notranslate nohighlight">\(T_{\rm eff} \sim 10^4 \; \rm K\)</span>). They have <span class="math notranslate nohighlight">\(P \sim 30 - 1200 \; \rm seconds\)</span>, caused by κ-mechanism in the outer atmosphere due to partial H ionization.</p>
+<p>Of these variable stars, C<strong>epheids are the most important because they follow a period-luminosity relation</strong> found by Henrietta Swan-Leavitt</p>
+<div class="math notranslate nohighlight">
+\[\langle m_I \rangle \approx -3 \log \left( \frac{P}{\rm 1 \; day} \right) - 2\]</div>
+<p>where <span class="math notranslate nohighlight">\(m_I\)</span> is the apparent magnitude in the I-band. Cepheids play a crucial role in the distance ladder.</p>
+<p>Most variable stars are powered by the κ-mechanism, although it is theorized that the ε-mechanism can create radial stellar pulsations as well. These mechanisms can be understood by perturbing the equations of stellar structure, a perturbation in luminosity then can be written as</p>
+<div class="math notranslate nohighlight">
+\[\delta L \sim \delta \dot{P} - c_s^2 \delta \dot{\rho} \sim \rho \; \delta \left( \underbrace{\varepsilon_n}_{\rm nuclear \; burning} - \underbrace{\frac{\nabla \cdot \mathbf{F}}{\rho}}_{\rm flux} \right) \; .\]</div>
+<p>We’ve assumed the background to be adiabatic such that <span class="math notranslate nohighlight">\(\nabla \cdot \mathbf{F} / \rho = \partial L / \partial M = \varepsilon_n\)</span>. Then we ask, do we get a net heating (excitation from <span class="math notranslate nohighlight">\(\varepsilon_n\)</span> or <span class="math notranslate nohighlight">\(\nabla \cdot \mathbf{F}\)</span>) as we follow a non-adiabatic pulsation (like a Carnot engine)</p>
+<div class="math notranslate nohighlight">
+\[W = \oint \frac{dE}{dt} dt\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\frac{dE}{dt} = \int_0^M \delta T \underbrace{\frac{d\delta S}{dt}}_{\frac{1}{T} \delta \left(\varepsilon_n - \frac{\nabla \cdot \mathbf{F}}{\rho} \right)} dM\]</div>
+<p>which can be decomposed into a nuclear burning component and a flux component</p>
+<div class="math notranslate nohighlight">
+\[\mathrm{nuclear \; burning:} \;\;\;\;\; \frac{dE}{dt} = \int \frac{\delta T}{T} \delta \varepsilon_n dM = \int_0^M dM \varepsilon_n \left[ \varepsilon_T + \frac{\varepsilon_\rho}{\Gamma_3 - 1} \right] \left( \frac{\delta T}{T} \right)^2\]</div>
+<div class="math notranslate nohighlight">
+\[\mathrm{flux:} \;\;\;\;\;\frac{dE}{dt} = -\int \frac{\delta T}{T} \delta \left(\frac{\nabla \cdot \mathbf{F}}{\rho} \right) dM = \int_0^M dM \frac{dL}{dM} \left[ \kappa_T + \frac{\kappa_\rho}{\Gamma_3 - 1} \right] \left( \frac{\delta T}{T} \right)^2\]</div>
+<p>where <span class="math notranslate nohighlight">\(\delta T/T\)</span> is the eigenfunction for a single frequency (like each perturbing wave has a characteristic frequency, each blob has a characteristic temperature fluctuation). We define  a few quantities</p>
+<div class="math notranslate nohighlight">
+\[\kappa_{\rho} \equiv \frac{\partial \ln \kappa}{\partial \ln \rho} \bigg|_{T} \;\;\;\;\;\;\;\;\; \kappa_{T} \equiv \frac{\partial \ln \kappa}{\partial \ln T} \bigg|_{\rho}\]</div>
+<div class="math notranslate nohighlight">
+\[\varepsilon_{\rho} \equiv \frac{\partial \ln \varepsilon_n}{\partial \ln \rho} \bigg|_{T} \;\;\;\;\;\;\;\;\; \varepsilon_{T} \equiv \frac{\partial \ln \varepsilon_n}{\partial \ln T} \bigg|_{\rho} \; .\]</div>
+<p>In practice, these are just the exponents in the expressions <span class="math notranslate nohighlight">\(\kappa \propto \rho^\alpha T^\beta\)</span> or <span class="math notranslate nohighlight">\(\varepsilon_n \propto \rho^\alpha T^\beta\)</span>.</p>
+<p>The upshot of all of this, is that when</p>
+<div class="math notranslate nohighlight">
+\[\left[ \kappa_T + \frac{\kappa_\rho}{\Gamma_3 - 1} \right] &gt; 0\]</div>
+<p>we will have a driving region which will lead to coherent radial stellar pulsations. This is referred to as the <strong>κ-mechanism</strong>. We know that <span class="math notranslate nohighlight">\(\kappa_\rho\)</span> is almost always positive and <span class="math notranslate nohighlight">\(\kappa_T\)</span> is typically negative (e.g. Kramers <span class="math notranslate nohighlight">\(\kappa \propto \rho T^{-3.5}\)</span>) but <strong>sometimes this is not true</strong>. In particular, when we have <strong>partially ionized species</strong> that can alter the slope of <span class="math notranslate nohighlight">\(\kappa\)</span> with respect to <span class="math notranslate nohighlight">\(T\)</span>, effectively <strong>deviating from Kramers’ Opacity</strong> (see below)</p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-16__at__10.18.20__AM.png" /></p>
+<p>When <span class="math notranslate nohighlight">\(\partial \kappa / \partial T \geq 0\)</span> then we are susceptible to coherent radial stellar pulsations.  For example, in Cepheids, the κ-mechanism is powering their radial pulsations and <span class="math notranslate nohighlight">\(\rm He^+\)</span> is thought to be responsible for the pulsations. In simple words, if <span class="math notranslate nohighlight">\(\kappa \uparrow\)</span> with <span class="math notranslate nohighlight">\(T \uparrow\)</span>, then a blob of fluid deep in the star will become more opaque and thus absorb more flux from the inner regions of the star which will eventually cause the blob to get so hot that it rises upward (also from radiation pressure) which will allow the the blob to cool back down and it will then sink, closing the loop. This can only occur because <span class="math notranslate nohighlight">\(\rm He^+\)</span> alters Kramers’ opacity to have a positive slope w.r.t temperature!</p>
+<p>We can also have the ε-mechanism driving pulsations with a similar condition</p>
+<div class="math notranslate nohighlight">
+\[\left[ \varepsilon_T + \frac{\varepsilon_\rho}{\Gamma_3 - 1} \right] &gt; 0 \; ,\]</div>
+<p>if this is true then we will get a driving region which will lead to coherent radial stellar pulsations. If we look at any nuclear burning rate (pp-chain <span class="math notranslate nohighlight">\(\varepsilon_n \propto \rho T^{4}\)</span>, CNO <span class="math notranslate nohighlight">\(\varepsilon_n \propto \rho T^{20}\)</span>, 3α <span class="math notranslate nohighlight">\(\varepsilon_n \propto \rho^2 T^{40}\)</span>) we would expect that this quantity should be positive and thus <strong>we should see ε-mechanism!</strong> Unfortunately, the oscillations get suppressed throughout the star so we only see this in some cases of shell burning but it’s very rare, <strong>most variable stars are powered by the κ-mechanism.</strong></p>
+<p>In summary, the κ-mechanism is important for explaining non-adiabatic stellar pulsations in the outer layers of stars (Kramers is stable, deviations due to partial ionization are not). Classical cepheids are caused by the <span class="math notranslate nohighlight">\(\rm He^+\)</span> bump in <span class="math notranslate nohighlight">\(\kappa(T)\)</span>, β-Cepheids are caused by <span class="math notranslate nohighlight">\(\rm Fe\)</span> bump in <span class="math notranslate nohighlight">\(\kappa(T)\)</span>, and RR Lyraes, γ-Doradus, and δ-Scuti are all due to <span class="math notranslate nohighlight">\(\rm H + He\)</span> bump.</p>
+<p>Variable stars are commonly found on the <strong>instability strip</strong> <span class="math notranslate nohighlight">\(5500 \; \mathrm{K} \lesssim T_{\rm eff} \lesssim 7500 \; \rm K\)</span>. The lower bound comes up because convection reaches the region and the upper bound comes from the fact that ionization zones get too close to the surface.</p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-16__at__10.41.07__AM.png" /></p>
+</li>
+<li><p><span style="color:magenta">What are p and g mode oscillations of a star? How are they observed and distinguished? What are the typical frequencies for a Sun-like star? If the p-mode spectrum is measured, what quantities can be determined about the stellar interior?</span></p>
+<p>Stars can have adiabatic pulsations, some of which are <strong>non-radial</strong> (p &amp; g modes) commonly described with spherical harmonics <span class="math notranslate nohighlight">\(Y_{\ell m}(\theta, \varphi)\)</span>. We make the <strong>cowling approximation</strong> that the stars structure varies more slowly with radius than the perturbations.</p>
+<p>The dispersion relation is given by</p>
+<div class="math notranslate nohighlight">
+\[k^2 = \frac{\omega^2}{c^2} \left(1 - \frac{S_\ell^2}{\omega^2} \right) \left(1 - \frac{N^2}{\omega^2} \right)\]</div>
+<p>where <span class="math notranslate nohighlight">\(S_\ell \equiv \ell (\ell + 1) c_s^2 / r^2\)</span> and <span class="math notranslate nohighlight">\(N\)</span> is the Brunt-Vaïsäla frequency. There are 2 cases that produce a real wavenumber:</p>
+<p>I) <span class="math notranslate nohighlight">\(\omega^2 &gt; S_\ell^2\)</span> and <span class="math notranslate nohighlight">\(\omega^2 &gt; N^2\)</span> : <strong>p-modes, pressure is the restoring force.</strong>
+II) <span class="math notranslate nohighlight">\(\omega^2 &lt; S_\ell^2\)</span> and <span class="math notranslate nohighlight">\(\omega^2 &lt; N^2\)</span> : <strong>g-modes, buoyancy is the restoring force.</strong></p>
+<p>If either of these conditions are not met, the wave is considered <strong>evanescent</strong> (aka exponentially damped).</p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-16__at__10.47.15__AM.png" /></p>
+<p>When we do helioseismology we can probe thousands of <span class="math notranslate nohighlight">\(\ell\)</span> modes which provide fantastic constraints on the Sun’s properties including its’ age (assuming composition) and structure! Note g-modes are usually really hard to observe because they are embedded deep within the star so they are damped observationally. Asteroseismology tries to measure f-modes and p-modes in other stars but its much harder and they can only probe a few of the first <span class="math notranslate nohighlight">\(\ell\)</span> modes.</p>
+<p>The f-mode is also called the “fundamental” mode. These modes are oscillations on the surface of the star due to surface gravity waves, they pulsate on the order of the dynamical or free-fall time. They are typically excited by collisions or dynamical tides in binary systems. The last kind of modes are r-modes which are “Rossby” modes which come from rapid rotation (found in binary neutron star systems for example).</p>
+<p>p-modes have a frequency given by <span class="math notranslate nohighlight">\(f_p \sim (n + \ell/2) \frac{c_s}{2 R_*}\)</span> and in the <strong>Sun the frequency is of order 5 minutes</strong>. They are measured in the Sun with high resolution doppler spectroscopy of the surface and mapping surface intensity variations (GONG, GOLG, SOHO, SDO). In Asteroseismology we can probe a few p-modes by changes in brightness with changing photosphere using (Kepler, TESS, CoRoT).</p>
+<p>The rotation of the Sun can also induce a Zeeman-like splitting of the frequencies of the p-modes allowing us to measure the <strong>rotation profile of the Sun</strong> with exquisite detail along with the <strong>sound speed profile to determine the Tachocline</strong> (boundary between radiative and convective zones). We’ve learned that the convective zone differentially rotates (faster at lower lattitude) while the radiative zone rotates as a solid body.</p>
+</li>
+<li><p><span style="color:magenta">What is degeneracy pressure? Sketch pressure versus density for a degenerate electron gas, over the range of densities relevant to stars.</span></p>
+<p><strong>Degeneracy Pressure:</strong> Effective pressure of a <strong>cold fermion gas</strong> produced by their quantum mechanical zero-point energy. Think of it as a manifestation of the Pauli Exclusion principle where no 2 fermions can occupy the same quantum state because the wavefunctions will deconstructively interfere.</p>
+<p>It is worth while to take a slight detour to explain this further. The distribution function in general for particles in 6D phase space is</p>
+<div class="math notranslate nohighlight">
+\[f = \frac{1}{e^{(E - \mu)/kT} \pm 1}\]</div>
+<p>where + corresponds to fermions and - corresponds to bosons, <span class="math notranslate nohighlight">\(E\)</span> is the energy of the particle, <span class="math notranslate nohighlight">\(T\)</span> is the temperature, <span class="math notranslate nohighlight">\(\mu\)</span> is the chemical potential, and <span class="math notranslate nohighlight">\(g\)</span> is the particle degeneracy. The total number density of your particles can be acquired by integrating over momentum space</p>
+<div class="math notranslate nohighlight">
+\[n(x) = g \int f \; d^3p = \frac{g}{h^3} \int f \; 4\pi p^2 dp\]</div>
+<p>and one can weight this integral by the typical kinetic energy of a particle to get the energy density of the gas. If the gas is non-relativistic (<span class="math notranslate nohighlight">\(p \ll mc\)</span>) then <span class="math notranslate nohighlight">\(E_k \approx p^2 / 2m\)</span> and <span class="math notranslate nohighlight">\(U = \frac{3}{2}P\)</span> and if the gas is relativistic (<span class="math notranslate nohighlight">\(p \sim mc\)</span>) then <span class="math notranslate nohighlight">\(E_k \approx pc\)</span> and <span class="math notranslate nohighlight">\(U = 3 P\)</span>. The energy density is formally written as</p>
+<div class="math notranslate nohighlight">
+\[U = \frac{g}{h^3}\int E_k(p) \cdot f \cdot 4\pi p^2 dp\]</div>
+<p>this is the same as the distribution function in dynamics except now instead of stars we’re talking about particles in a gas.</p>
+<p>From this definition of the distribution function, we can get all of our famous useful relations for gasses in astrophysics.</p>
+<p>For example, we can get the <strong>Maxwell-Boltzmann</strong> distribution by simply taking the limit that <span class="math notranslate nohighlight">\(mc^2 \gg E - \mu \gg kT\)</span> so that <span class="math notranslate nohighlight">\(f \gg 1\)</span> which if we plug into the expressions above we get <span class="math notranslate nohighlight">\(U = \frac{3}{2} nkT\)</span> and <span class="math notranslate nohighlight">\(P = nkT\)</span>.</p>
+<p>If we want the <strong>Planck</strong> distribution we just assume photons are bosons and that <span class="math notranslate nohighlight">\(\mu = 0\)</span> and <span class="math notranslate nohighlight">\(E = h \nu\)</span> then we arrive at</p>
+<div class="math notranslate nohighlight">
+\[n_\nu d\nu = \frac{8\pi\nu^2}{c^3} \frac{1}{e^{h\nu/kT} - 1}d\nu\]</div>
+<p>and by extension we get <span class="math notranslate nohighlight">\(U = a T^4 = \frac{4\pi}{c} B_\nu(T)\)</span> with</p>
+<div class="math notranslate nohighlight">
+\[B_\nu(T) d\nu = \frac{2h\nu^3}{c^2} \frac{1}{e^{h\nu/kT} - 1} d\nu \; .\]</div>
+<p>Lastly, if we want to talk about degenerate gas then we need the <strong>Fermi-Dirac</strong> distribution of cold and dense fermions (<span class="math notranslate nohighlight">\(E \ll \mu\)</span> and <span class="math notranslate nohighlight">\(kT \ll \mu\)</span>). In this case the distribution function is unity when <span class="math notranslate nohighlight">\(p \leq p_F\)</span> and zero otherwise. In the Fermi-Dirac distribution one can compute the number density of electrons as a function of the Fermi momentum</p>
+<div class="math notranslate nohighlight">
+\[n_e = \frac{2}{h^3}\int_0^{p_F} f \cdot 4\pi p^2 dp = \frac{8 \pi}{3} \frac{p_F^3}{h^3} \; .\]</div>
+<p>This will be useful in deriving the Chandrasekhar limit. A useful note for getting a gauge of degeneracy is given by the ratio of the debroglie wavelength and the interparticle spacing</p>
+<div class="math notranslate nohighlight">
+\[\frac{p_F^2}{2 mkT} \sim \left(\frac{\lambda_B}{n_e^{-1/3}}\right)^2 \; .\]</div>
+<p>Intuitively, this is when the debroglie wavelengths begin to overlap.</p>
+<p>Below we include a useful reference figure for different Equations of State relevant to stars.</p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-16__at__12.15.21__PM.png" /></p>
+</li>
+<li><p><span style="color:magenta">Perform a simple derivation of the Chandrasekhar limit, or give a heuristic physical explanation.</span></p>
+<p>Heuristically, this is when a WD accretes enough mass from a companion such that the star’s degeneracy pressure transitions from being non-relativistic to ultra-relativistic. By the Virial theorem <span class="math notranslate nohighlight">\(\Omega = -(3 - \gamma) E_{\rm th}\)</span> the star will become weakly gravitationally bound and <strong>this transition triggers a thermonuclear runaway</strong> leading to a thermonuclear explosion.</p>
+<p>The Chandrasekhar mass can be determined by finding what the mass corresponding to this transition is. From the previous problem we learned that <span class="math notranslate nohighlight">\(n_e \sim p_F^3/\hbar^3\)</span> for a cold degenerate gas (where <span class="math notranslate nohighlight">\(p_F\)</span> is the Fermi momentum). In the ultra-relativistic limit the Fermi energy is related to the fermi momentum <span class="math notranslate nohighlight">\(E_F = p_F c \sim \hbar c n_e^{1/3}\)</span> and the pressure of the gas is given by <span class="math notranslate nohighlight">\(P \sim E_F n_e\)</span>. We can write in terms of mass density by saying <span class="math notranslate nohighlight">\(n_e \sim \rho N_A Y_e\)</span> where <span class="math notranslate nohighlight">\(Y_e \sim 1/ \mu_e\)</span> is the electron fraction and <span class="math notranslate nohighlight">\(N_A \sim 1 / m_p\)</span> is Avogadro’s number.</p>
+<p>An ultra-relativistic gas is described by a <span class="math notranslate nohighlight">\(n=3\)</span> polytrope which has the special property that the equation of state is directly related to the polytropic structure (only true for <span class="math notranslate nohighlight">\(n=3/2\)</span> and <span class="math notranslate nohighlight">\(n=3\)</span> degenerate gasses). With this we can write and solve for <span class="math notranslate nohighlight">\(K_2\)</span></p>
+<div class="math notranslate nohighlight">
+\[K_2 \left({\frac{n_e}{N_A Y_e}}\right)^{4/3} \sim \hbar c n_e^{4/3} \;\;\;\; \longrightarrow \;\;\;\; K_2 \sim \hbar c \left(Y_e N_A \right)^{4/3}\]</div>
+<p>and we have the polytropic radius-mass relation $<span class="math notranslate nohighlight">\(R^{(3-n)/n} M^{(n-1)/n} \sim \frac{K_2}{G}\)</span>$</p>
+<p>which we can see for <span class="math notranslate nohighlight">\(n=3\)</span> is independent of radius. Putting it all together we get the Chandrasekhar mass limit</p>
+<div class="math notranslate nohighlight">
+\[M_{\rm ch} \sim \left( \frac{\hbar c}{G} \right)^{3/2} (Y_e N_A)^2 \sim \frac{m_{\rm planck}^3}{m_p^2} Y_e^2 \sim 1.4 \; \mathrm{M_\odot} (2Y_e^2)\]</div>
+</li>
+<li><p><span style="color:magenta">Draw the binding energy curve (B/A versus A) of atomic nuclei ranging from hydrogen to uranium. Explain the most important features of the binding energy curve for astrophysics.</span></p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-16__at__11.03.32__AM.png" /></p>
+<p>Magic Numbers: 4, 8, 20, 28, 50, 82, 126. The B/A on the y-axis can be computed by</p>
+<div class="math notranslate nohighlight">
+\[\frac{B}{A} = -\frac{M(A,Z) - (A - Z)m_n - Z(m_p + m_e)}{A}\]</div>
+<p>where <span class="math notranslate nohighlight">\(M(A,Z)\)</span> is the nuclear mass. This can be computed with the Semi-Empirical Mass Formula “Drop Model”</p>
+<div class="math notranslate nohighlight">
+\[M(A,Z) = \underbrace{(A - Z) m_n + Z(m_p + m_e)}_{\rm rest \; mass} - \underbrace{a_1 A}_{\rm bulk} + \underbrace{a_2 A^{2/3}}_{\rm surface \; tension} + \underbrace{a_3 \frac{(A/2 - Z)^2}{A}}_{\rm symmetry \; energy} + \underbrace{a_4 \frac{Z^2}{A^{1/3}}}_{\rm coulomb} + \underbrace{a_5 \frac{\delta}{A^{3/4}}}_{\rm pairing}\]</div>
+<p>B/A is the energy liberated by nuclear fusion/fission and is directly related to the <span class="math notranslate nohighlight">\(0.007\)</span> factor in the lifetime of a star on the MS due to nuclear burning.</p>
+</li>
+<li><p><span style="color:magenta">What is meant by the s and r processes for the formation of heavy elements? In what astrophysical settings might these processes take place?</span></p>
+<p><strong>S</strong>low and <strong>R</strong>apid neutron capture processes. When nuclei capture neutrons, they are typically <strong>unstable</strong> and will β-decay to the valley of β-stability along stable isobars (i.e conserving mass number)</p>
+<div class="math notranslate nohighlight">
+\[\rm ^A_Z X \rightarrow ^A_{Z+1} X + e^- + \nu_e\]</div>
+<p>The s-process occurs when the <strong>neutron capture timescale is longer than the β-decay timescale</strong>, allowing nuclei to decay to β-stability between neutron captures.</p>
+<p>The r-process occurs when the <strong>neutron capture timescale is much shorter than the β-decay timescale</strong>, allowing nuclei to capture many neutrons before decaying to the β-stability.</p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-16__at__11.14.42__AM.png" /></p>
+<p>We see cosmic abundance peak at lower A due to r-process rather than due to s-process because with r-process nuclei reach magic numbers with fewer protons. The r-process primarily occurs in ejecta from BNS mergers or magnetar flares. The s-process primarily occurs in AGB stars, both processes contribute roughly equal amounts to heavy elements.</p>
+</li>
+<li><p><span style="color:magenta">What are Population I, II, and III stars?</span></p>
+<p>Population groups are basically just defined based on metallicity.</p>
+<p><strong>Population I)</strong> Stars forming after <span class="math notranslate nohighlight">\(\sim 3 \; \rm Gyrs\)</span> (after cosmic noon) which are the most metal enriched by the previous generations of stars. They can be found in the spiral arms of the MW and includes the Sun.</p>
+<p><strong>Population II)</strong> Stars formed before <span class="math notranslate nohighlight">\(\sim 3 \; \rm Gyrs\)</span> (before cosmic noon). They have lower metallicities <span class="math notranslate nohighlight">\(Z \sim 10^{-3} - 10^{-1} Z_\odot\)</span>, but they tend to have higher <span class="math notranslate nohighlight">\(\rm \alpha/Fe\)</span> ratio because Type Ia are responsible for most the Fe-peak elements and these take ~ Gyrs to form. They are found in the galactic bulge and galactic halo. When <span class="math notranslate nohighlight">\(Z \downarrow\)</span> then <span class="math notranslate nohighlight">\(\kappa \downarrow\)</span>, this means higher radiation flux throughout the star, forcing the core to contract so that the nuclear burn rate can balance the surface luminosity. The <strong>upshot is that Pop II stars evolve faster than Pop I Stars</strong>.</p>
+<p>Additionally, <strong>in Pop II stars, stellar winds are suppressed</strong> because they have less metals and by extension less dust in the upper atmosphere than can be driven by the radiation pressure from the star. This means these stars have less mass loss which leads to bigger cores, and <strong>more NS and BHs that form from Pop II stars!</strong></p>
+<p><strong>Population III)</strong> These would be stars that formed with <strong>primordial gas with no metals!</strong> These have never been observed, but they are expected in the first generation of galaxies. We expect <strong>inefficient cooling</strong> of primordial gas, they likely had a <strong>top-heavy IMF</strong> relative to Pop I and Pop II stars. They serve as a proposed explanation for SMBH seeding. We might expect exotic SNe explosions as well: e.g. pair-instability SNe (<span class="math notranslate nohighlight">\(&gt; 130 \; \rm M_\odot\)</span>) or hypernovae triggered by photodisentregation (<span class="math notranslate nohighlight">\(&gt;250 \; \rm M_\odot\)</span>).</p>
+</li>
+<li><p><span style="color:magenta">What is meant by the Initial Mass Function? Sketch this function and describe its key features. How is it determined observationally?</span></p>
+<p>The Initial Mass Function (IMF) describes the initial distribution of stellar masses for a population of stars. It is thought to be roughly universal for Population I stars (but disputed).</p>
+<p>The IMF is often described by empirical fits, the 3 most common IMFs discussed are:</p>
+<p>I) <strong>Salpeter:</strong> Power law <span class="math notranslate nohighlight">\(\xi(m) \propto m^{-2.35}\)</span> (oldest and simplest)</p>
+<p>II) <strong>Kroupa:</strong> The broken power law <span class="math notranslate nohighlight">\(\xi(m) \propto m^{-\alpha}\)</span> where</p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-16__at__12.32.57__PM.png" /></p>
+<p>III) <strong>Chabrier:</strong> power-law with log-normal bottom</p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-16__at__12.33.01__PM.png" /></p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-16__at__11.23.55__AM.png" /></p>
+<p>The IMF is commonly inferred from the <strong>present day mass function</strong> using stellar evolution models. We do this because there are not enough young star clusters nearby to directly measure the IMF. The PDMF is inferred from an HR diagram. The low mass end is hard to constrain because those stars are faint and light is dust attenuated and high mass end is hard because they are so short lived.</p>
+</li>
+<li><p><span style="color:magenta">What are the theoretical and observational constraints on the mass-radius relationship for (i) white dwarfs and (ii) neutron stars?</span></p>
+<p><strong>White Dwarfs)</strong> We can find the R(M) relation for WDs by interpolating between the degenerate E.O.S in the non-relativistic and ultra-relativistic limit. One can do it more accurately by interpolating between <span class="math notranslate nohighlight">\(n=3/2\)</span> and <span class="math notranslate nohighlight">\(n=3\)</span> polytropes (see Q15). The outcome is</p>
+<div class="math notranslate nohighlight">
+\[R \sim \frac{K_1}{0.42 G M^{1/3}} \left( 1 - \left( \frac{M}{M_{\rm ch}} \right)^{4/3} \right)^{1/2}\]</div>
+<p>with <span class="math notranslate nohighlight">\(M_{\rm ch} \sim 1.4 \; \rm M_\odot (2 Y_e)^2\)</span>. If one wants a detailed relation, you need to determine the radius that minimizes the energy at a given mass, this requires detailed E.O.S modeling.</p>
+<p>Constraints on R(M) come from the binary mass function using astrometry with GAIA for example or spectroscopy. If the WD is in a binary that is also eclipsing/transiting then we can get a radius too! The radius can be constrained from the Stephan-Boltzmann law using spectroscopic measurements of effective temperature with SDSS or HST.</p>
+<p><strong>Neutron Stars)</strong> The R(M) is not well constrained for NS so we have a variety of different models and this is still an open area of research. We do have a <strong>maximum-mass</strong> determined by the <strong>Oppenheimer-Volkov (TOV) Limit</strong>, where the contribution of energy density associated with pressure to the gravity fails and hydrostatic equilibrium becomes impossible. In this case <span class="math notranslate nohighlight">\(M_{\rm TOV} \sim 2.3 \; \rm M_\odot\)</span>, but the exact value is uncertain.</p>
+<p>Constraints on R(M) are lackluster. The TOV limit is constrained to <span class="math notranslate nohighlight">\(M_{\rm TOV} \gtrsim 2.1 \; \rm M_\odot\)</span> from the most massive confirmed NSs. X-ray pulsations measured by NICER can constrain the NS radius. Gravitational waveforms of NS mergers can constrain tidal deformability, constraining NS EOS -&gt; R(M).</p>
+</li>
+<li><p><span style="color:magenta">Compare and contrast Type Ia and Type II supernovae: their spectra, luminosities, power sources for the observed radiation, and possible causes.</span></p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-15__at__5.18.20__PM.png" /></p>
+<p><strong>Type Ia:</strong> Thermonuclear runaway triggered when <span class="math notranslate nohighlight">\(M &gt; M_{\rm ch}\)</span> (usually by accretion from a companion). These are used as standard candles via the <strong>Phillips relation</strong> which is a relationship between peak <span class="math notranslate nohighlight">\(m_B\)</span> and decay in <span class="math notranslate nohighlight">\(m_B\)</span> over 15 days. The scatter in the relation comes from different properties of the companion and its orbit.</p>
+<p><strong>Type II:</strong> Core collapse for <span class="math notranslate nohighlight">\(M \gtrsim 8 \; \rm M_\odot\)</span>, the core burns up to Fe &amp; Ni and becomes inert and degenerate. It fail to hold up the star against gravity leading to collapse on the timescale of the free-fall time <span class="math notranslate nohighlight">\(t_{\rm ff} \sim (G\rho)^{-1/2}\)</span>. When <span class="math notranslate nohighlight">\(M_{\rm core} &gt; M_{\rm ch}\)</span> then we get core collapse which launches an outward shock and unbinds the stellar envelope creating ejecta. The core will either form a NS or BH depending on progenitor mass. The outward shock stalls due to inward acceleration and photodisentigration of heavy nuclei but then reaccelerates due to <span class="math notranslate nohighlight">\(\nu\)</span>-energy transport.</p>
+</li>
+<li><p><span style="color:magenta">Over what range of initial masses do stars become white dwarfs? Neutron stars? Black holes? What are the sources of uncertainty in these mass boundaries?</span></p>
+<p><img alt="placeholder" src="_images/Screenshot__2025-05-15__at__5.26.14__PM.png" /></p>
+</li>
+</ol>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Dynamics.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Dynamics</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
