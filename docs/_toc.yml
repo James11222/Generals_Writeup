@@ -1,0 +1,10 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: PhD_Level_Astrophysics_in_a_Nutshell
+chapters:
+- file: Cosmology_and_Extragalactic_Astronomy
+- file: Diffuse_Matter_in_Space
+- file: Dynamics 
+- file: Stars
