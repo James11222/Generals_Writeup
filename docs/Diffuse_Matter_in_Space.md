@@ -145,7 +145,7 @@
 
 	In HII regions, emission line strengths can be used to determine Oxygen abundances. We can use transitions in $\rm [OIII]$ to determine the electron temperature $T_e$ which we then use this temperature to infer Oxygen abundances from O to H line ratios. This only works in low density regions where lines are **collisionally excited** and then **radiatively de-excited** (forbidden transition which violates quantum selection rules).
 
-	In detail this method starts with detailed balance (see figure below for the $\rm [OIII] line)
+	In detail this method starts with detailed balance (see figure below for the $\rm [OIII]$ line)
 
 	$$n_0 C_{04} = n_4(A_{43} + A_{41}) \;\;\;\;\;\; \& \;\;\;\;\;\; n_4 A_{43} + n_0 C_{03} = n_3(A_{32} + A_{31})$$
 
