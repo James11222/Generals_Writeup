@@ -370,7 +370,7 @@
 	
 	$$t_{\rm rel} \sim 0.1 \frac{N}{\ln N} t_{\rm dyn}$$
 
-	where $N$ is the number of stars in the system and $t_{\rm dyn} = (G \rho)^{-1}$ is the dynamical time.  This is computed accounting for close and distant encounters and the factor of $\ln N$ comes from the the $\ln \Lambda$ coefficient seen in dynamical friction. A proper derivation of this form requires a bit more thought and one should refer to [Tremaine](https://press.princeton.edu/books/paperback/9780691207117/dynamics-of-planetary-systems?srsltid=AfmBOooBO_Mtg6bVMronJmxfQ6ZUSbtCm-Dc9LDyAnF2C_29uBTfB90H) for a comprehensive treatment of this.
+	where $N$ is the number of stars in the system and $t_{\rm dyn} = (G \rho)^{-1/2}$ is the dynamical time.  This is computed accounting for close and distant encounters and the factor of $\ln N$ comes from the the $\ln \Lambda$ coefficient seen in dynamical friction. A proper derivation of this form requires a bit more thought and one should refer to [Tremaine](https://press.princeton.edu/books/paperback/9780691207117/dynamics-of-planetary-systems?srsltid=AfmBOooBO_Mtg6bVMronJmxfQ6ZUSbtCm-Dc9LDyAnF2C_29uBTfB90H) for a comprehensive treatment of this.
 
 15. <span style="color:magenta">What is dynamical friction? If the space density of stars is n and their velocity dispersion is σ, sketch and explain the dependence of the effective frictional force on v.</span>
 
