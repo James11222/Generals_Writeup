@@ -435,7 +435,7 @@
 	
 	$$K_2 \left({\frac{n_e}{N_A Y_e}}\right)^{4/3} \sim \hbar c n_e^{4/3} \;\;\;\; \longrightarrow \;\;\;\; K_2 \sim \hbar c \left(Y_e N_A \right)^{4/3}$$ 
 	
-	and we have the polytropic radius-mass relation $$R^{(3-n)/n} M^{(n-1)/n} \sim \frac{K_2}{G}$$
+	and we have the polytropic radius-mass relation $R^{(3-n)/n} M^{(n-1)/n} \sim \frac{K_2}{G}$
 	
 	which we can see for $n=3$ is independent of radius. Putting it all together we get the Chandrasekhar mass limit 
 	
